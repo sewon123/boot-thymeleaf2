@@ -1,6 +1,5 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -27,6 +26,7 @@
 </head>
 
 <body>
+<th:block th:include="fragments/headernav"></th:block>
     <!--::header part start::-->
     <header class="main_menu home_menu">
         <div class="container">
@@ -47,13 +47,13 @@
                                     <a class="nav-link" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/user-login">Log-In</a>
+                                    <a class="nav-link" href="/user-login-form">Log-In</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/user-regist">Sign-Up</a>
+                                    <a class="nav-link" href="/user-register-form">Sign-Up</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="project.html">portfolio</a>
+                                    <a class="nav-link" href="project.html">Portfolio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="blog.html">Blog</a>
@@ -78,7 +78,6 @@
         </div>
     </header>
     <!-- Header part end-->
-
     <!-- banner part start-->
     <section class="banner_part">
         <div class="container">
